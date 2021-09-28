@@ -8,3 +8,4 @@ do
 done
 echo "Factorial of $input is: "
 echo  $factorial 
+exit 0
