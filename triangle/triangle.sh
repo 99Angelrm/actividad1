@@ -10,3 +10,5 @@ if [[($A+$B -gt C)]]&&[[($B+$C -gt $A)]]&&[[($C+$A -gt $B)]];
 	else
 		echo "Invalid triangle"
 fi
+
+exit 0
