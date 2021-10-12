@@ -1,1 +1,1 @@
-![Instrucciones](WhatsApp Image 2021-09-27 at 9.57.26 PM "Title")
+![Instrucciones](https://raw.github.com/99Angelrm/actividad1/main/WhatsApp%20Image%202021-09-27%20at%209.57.26%20PM.jpeg "Title")
