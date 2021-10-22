@@ -1,9 +1,11 @@
+import sys, random
+
 def createNMatrix(n):
     mat=[]
     for i in range(n): 
         row=[]                              #temporary list to store the row
         for j in range(n): 
-            row.append(int(input()))         #add the input to row list
+            row.append(random.randint(0,10))         #add the input to row list
         mat.append(row)                      #add the row to the list
     #print(mat)
     return mat
@@ -33,7 +35,7 @@ def nmatrix():
     B=[]
     C=[]
 
-    n=int(input("enter the order of matrix: "))
+    n=int(sys.argv[1])
 
     print("enter elements for the first matrix:")
     A=createNMatrix(n)
