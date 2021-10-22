@@ -37,17 +37,17 @@ def nmatrix():
 
     n=int(sys.argv[1])
 
-    print("enter elements for the first matrix:")
+    #print("enter elements for the first matrix:")
     A=createNMatrix(n)
-    print_matrix(n,A)
+    #print_matrix(n,A)
 
-    print("enter elements for the second matrix:")
+    #print("enter elements for the second matrix:")
     B=createNMatrix(n)
-    print_matrix(n,B)
+    #print_matrix(n,B)
 
-    print("this is the result of the multiplication:")
+    #print("this is the result of the multiplication:")
     C=matrixMultiplication(n,A,B)
-    print_matrix(n,C)
+    #print_matrix(n,C)
 
 def main():
     nmatrix()
