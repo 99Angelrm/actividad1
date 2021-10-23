@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-void createNMatrix(int n, int a[n][n])
+void createNMatrix(int n, double a[n][n])
 {
     int i, j;
     for (i = 0; i < n; i++)
@@ -10,9 +11,10 @@ void createNMatrix(int n, int a[n][n])
 
         {
 
-            scanf("%d", &a[i][j]);
+            a[i][j]= rand() % 20;
         }
     }
+    /*
 
     printf("matrix of n * n order is\n");
 
@@ -27,7 +29,7 @@ void createNMatrix(int n, int a[n][n])
             printf("%d ", a[i][j]);
         }
         printf("\n");
-    }
+    }*/
 }
 
 void print_mat(int r, int c, int m[r][c])
@@ -43,7 +45,7 @@ void print_mat(int r, int c, int m[r][c])
     return;
 }
 
-void matrixMultiplication(int n, int a[n][n], int b[n][n], int c[n][n])
+void matrixMultiplication(int n, double a[n][n], double b[n][n], double c[n][n])
 {
     int i, j, k;
     for (i = 0; i < n; i++)
@@ -63,29 +65,29 @@ void matrixMultiplication(int n, int a[n][n], int b[n][n], int c[n][n])
                 c[i][j] += a[i][k] * b[k][j];
             }
 
-            printf("%d ", c[i][j]);
+            //printf("%d ", c[i][j]);
         }
 
-        printf("\n");
+        //printf("\n");
     }
 }
 
-int main()
+int main(int argc, char *argv[])
 {
-    int a[100][100], b[100][100], c[100][100];
+    double a[1000][1000], b[1000][1000], c[1000][1000];
     int n;
 
-    printf("enter the order of matrix: ");
+    //printf("enter the order of matrix: ");
 
-    scanf("%d", &n);
+    n = atoi(argv[1]);
 
-    printf("enter elements for the first matrix: \n");
+    //printf("enter elements for the first matrix: \n");
     createNMatrix(n, a);
 
-    printf("enter elements for the second matrix: \n");
+    //printf("enter elements for the second matrix: \n");
     createNMatrix(n, b);
 
-    printf("this is the result of the multiplication: \n");
+    //printf("this is the result of the multiplication: \n");
     matrixMultiplication(n, a, b, c);
 
     return 0;
