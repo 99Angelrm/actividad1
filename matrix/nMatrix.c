@@ -11,7 +11,7 @@ void createNMatrix(int n, double a[n][n])
 
         {
 
-            a[i][j]= rand() % 20;
+            a[i][j] = rand() % 20;
         }
     }
     /*
