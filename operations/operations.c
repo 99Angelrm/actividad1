@@ -1,18 +1,14 @@
 #include <stdio.h>
 #include <string.h>
 
-int main()
+int main(int argc, char *argv[])
 {
     int number1, number2, res;
-    char op[2]; 
+    char op; 
 
-    printf("Enter a number: ");
-    scanf("%d", &number1);
-    printf("Enter another number: ");
-    scanf("%d", &number2);
-    
-    printf("Enter your opetation [+,-,*,/]: ");
-    scanf("%s", &op);
+    number1 = argv[1];
+    number2 = argv[2];
+    op = argv[3];
 
     if (strcmp(op, "+")==0){
         res = number1 + number2;
